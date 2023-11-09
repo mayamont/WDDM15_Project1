@@ -47,3 +47,17 @@ p.legend
     font-size: 75%;
     margin-bottom: 40px;
 }
+
+.button
+{
+    background-color: #900606;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    margin-bottom: 30px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+
+    
+}
