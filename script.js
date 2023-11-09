@@ -65,3 +65,7 @@ $.getJSON( "information.json", function( data ) {
     YearsQualified.innerHTML = PeopleQualified;
     YearToday.innerHTML = data.YearToday;
     age.innerHTML = data.age;
+    postiveOutcome = "Congratulations! If you were born in " + data.YearQualified + ", you may be now qualified for retirement";
+    myElement15.innerHTML = postiveOutcome;
+
+});
