@@ -22,3 +22,17 @@ const myElement13 = document.getElementById("textp2plan");
 const myElement14 = document.getElementById("textp3plan");
 const myElement15 = document.getElementById("textpresult");
 let hidden3 = myElement15.getAttribute("hidden");
+
+function Aboutit(a){
+    var texto = "The Canada Pension Plan (CPP) retirement pension is a monthly, taxable benefit that replaces part of your income when you retire. If you qualify, you’ll receive the CPP retirement pension for the rest of your life.<br> To qualify you must:" 
+    var texto2 = "Valid contributions can be either from work you did in Canada, or as the result of receiving credits from a former spouse or former common-law partner at the end of the relationship.";
+    var texto3 = "Text from: <a href='https://www.canada.ca/en/services/benefits/publicpensions/cpp.html'>Canadian government website</a>"
+    myElement.innerHTML = "About the plan";
+    myElement3.removeAttribute("hidden");
+    myElement2.removeAttribute("hidden");
+    myElement2.innerHTML = texto;
+    myElement4.innerHTML = texto2;
+    myElement5.innerHTML = texto3;
+    myElement10.setAttribute("hidden", "hidden");
+    myElement15.setAttribute("hidden", "hidden");
+}
