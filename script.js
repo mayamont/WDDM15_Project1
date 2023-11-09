@@ -13,3 +13,5 @@ const myElement6 = document.getElementById("texth1");
 const myElement7 = document.getElementById("textpplan");
 const myElement8 = document.getElementById("textp2plan");
 const myElement9 = document.getElementById("textp3plan");
+let myElement10 = document.getElementById("infotable");
+let hidden2 = myElement10.getAttribute("hidden");
