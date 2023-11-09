@@ -59,3 +59,9 @@ function ClientInfo(b){
     myElement15.setAttribute("hidden", "hidden");
 
 }
+
+$.getJSON( "information.json", function( data ) {
+    PeopleQualified = data.YearQualified + " or older";
+    YearsQualified.innerHTML = PeopleQualified;
+    YearToday.innerHTML = data.YearToday;
+    age.innerHTML = data.age;
