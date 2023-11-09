@@ -48,3 +48,14 @@ function Result(a){
     myElement15.removeAttribute("hidden");
  
 }
+
+function ClientInfo(b){
+    myElement6.innerHTML = "Today's qualification";
+    myElement7.innerHTML = "";
+    myElement8.innerHTML = "";
+    myElement9.innerHTML = "";
+    myElement10.removeAttribute("hidden");
+    myElement3.setAttribute("hidden", "hidden");
+    myElement15.setAttribute("hidden", "hidden");
+
+}
