@@ -36,3 +36,15 @@ function Aboutit(a){
     myElement10.setAttribute("hidden", "hidden");
     myElement15.setAttribute("hidden", "hidden");
 }
+
+function Result(a){
+
+    myElement11.innerHTML = "Summary";
+    myElement13.innerHTML = "";
+    myElement14.innerHTML = "";
+    myElement2.setAttribute("hidden", "hidden");
+    myElement3.setAttribute("hidden", "hidden");
+    myElement10.setAttribute("hidden", "hidden");
+    myElement15.removeAttribute("hidden");
+ 
+}
