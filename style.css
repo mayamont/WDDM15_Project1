@@ -30,3 +30,10 @@ p.text
     margin-right: 30px;
     margin-left: 30px;
 }
+
+p.legend
+{
+    text-align: center;
+    font-size: 75%;
+    margin-bottom: 40px;
+}
