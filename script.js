@@ -15,3 +15,10 @@ const myElement8 = document.getElementById("textp2plan");
 const myElement9 = document.getElementById("textp3plan");
 let myElement10 = document.getElementById("infotable");
 let hidden2 = myElement10.getAttribute("hidden");
+
+const myElement11 = document.getElementById("texth1");
+const myElement12 = document.getElementById("textpplan");
+const myElement13 = document.getElementById("textp2plan");
+const myElement14 = document.getElementById("textp3plan");
+const myElement15 = document.getElementById("textpresult");
+let hidden3 = myElement15.getAttribute("hidden");
