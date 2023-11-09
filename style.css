@@ -68,6 +68,10 @@ p.legend
     background-color:#f1f1f1
 }
 
+.bordered tr{
+    border-bottom:1px solid #ddd
+}
+
 ul.list
 {
     text-align: justify;
