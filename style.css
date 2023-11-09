@@ -64,6 +64,10 @@ p.legend
 
 }
 
+.striped tbody tr:nth-child(even){
+    background-color:#f1f1f1
+}
+
 ul.list
 {
     text-align: justify;
