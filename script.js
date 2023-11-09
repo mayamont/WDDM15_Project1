@@ -6,3 +6,4 @@ const myElement = document.getElementById("texth1");
 const myElement2 = document.getElementById("textpplan");
 let myElement3 = document.getElementById("requirements");
 let hidden = myElement3.getAttribute("hidden");
+const myElement4 = document.getElementById("textp2plan");
