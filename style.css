@@ -97,3 +97,8 @@ ul.list
     margin-bottom: 40px;
 
 }
+
+.theme {
+    color:#fff !important;
+    background-color:#8d1007 !important
+}
