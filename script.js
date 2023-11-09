@@ -1,0 +1,1 @@
+const YearsQualified = document.getElementById("yearqualified");
