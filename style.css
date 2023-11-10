@@ -127,3 +127,13 @@ ul.list
     padding-top:16px!important;
     padding-bottom:16px!important
 }
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
