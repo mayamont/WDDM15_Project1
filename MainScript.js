@@ -69,7 +69,8 @@ $.getJSON( "information.json", function( data ) {
     YearsQualified.innerHTML = PeopleQualified;
     YearToday.innerHTML = data.YearToday;
     age.innerHTML = data.age;
-    postiveOutcome = "Congratulations! If you were born in " + data.YearQualified + ", you may be now qualified for retirement";
+    postiveOutcome = "Congratulations! If you were born in " + data.YearQualified + ", you may be now qualified for retirement. To apply, go to 'https://www.canada.ca/en/services/benefits/publicpensions/cpp/cpp-benefit/apply.html' to apply'";
     myElement15.innerHTML = postiveOutcome;
 
 });
+
