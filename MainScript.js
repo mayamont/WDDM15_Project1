@@ -60,6 +60,10 @@ function ClientInfo(b){
 
 }
 
+document.getElementById("benefits").addEventListener("click", function() {
+    alert("STOP, CONSTRUCTION!!!! 🚧🛑🚜🛠️👷");
+  });
+
 $.getJSON( "information.json", function( data ) {
     PeopleQualified = data.YearQualified + " or older";
     YearsQualified.innerHTML = PeopleQualified;
