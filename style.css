@@ -1,4 +1,4 @@
-html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Epilogue", sans-serif;}
 
 .item1 { grid-area: header; }
 .item3 { grid-area: main; }
@@ -49,6 +49,12 @@ p.legend
     margin-bottom: 40px;
 }
 
+.legend a:hover
+{
+  color:#8d1007;
+  text-decoration:none;
+}
+
 .button
 {
     background-color: #900606;
@@ -64,8 +70,8 @@ p.legend
 }
 
 .button:hover {
-    background-color: #ffcc00;
-    color: #333;
+    background-color: #f6665c;
+    color: #000;
   }
 
 .table
@@ -185,15 +191,15 @@ ul.list
 
 .site-footer
 {
-  background-color:#26272b;
+  background-color:#f6665c ;
   padding:45px 0 20px;
   font-size:15px;
   line-height:24px;
-  color:#737373;
+  color:#000;
 }
 .site-footer hr
 {
-  border-top-color:#bbb;
+  border-top-color:#000;
   opacity:0.5
 }
 .site-footer hr.small
@@ -202,7 +208,7 @@ ul.list
 }
 .site-footer h6
 {
-  color:#fff;
+  color:#000;
   font-size:16px;
   text-transform:uppercase;
   margin-top:5px;
@@ -210,11 +216,11 @@ ul.list
 }
 .site-footer a
 {
-  color:#737373;
+  color:#000;
 }
 .site-footer a:hover
 {
-  color:#3366cc;
+  color:#8d1007;
   text-decoration:none;
 }
 .footer-links
@@ -228,11 +234,12 @@ ul.list
 }
 .footer-links a
 {
-  color:#737373
+  color:#000
 }
+
 .footer-links a:active,.footer-links a:focus,.footer-links a:hover
 {
-  color:#3366cc;
+  color:#8d1007;
   text-decoration:none;
 }
 .footer-links.inline li
@@ -251,7 +258,7 @@ ul.list
   margin-left:6px;
   margin-right:0;
   border-radius:100%;
-  background-color:#33353d
+  background-color:#000
 }
 .copyright-text
 {
