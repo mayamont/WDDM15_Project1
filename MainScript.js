@@ -60,6 +60,19 @@ function ClientInfo(b){
 
 }
 
+document.getElementById("age check") .addEventListener("click", function() {
+  const ageCheck = prompt("Type your age")
+})
+if (ageCheck === "65") {
+  alert("You're at the standard age to Retire!");
+} else if (ageCheck > "65") {
+  alert("You passed the standard age to Retire!")
+} else if (ageCheck >"59") {
+  alert("You may be eligible to retire, although the standard age to retire is 65.")
+} else if (ageCheck <"59") {
+  alert("You're too young!")
+}
+
 document.getElementById("benefits").addEventListener("click", function() {
     alert("STOP, CONSTRUCTION!!!! 🚧🛑🚜🛠️👷");
   });
