@@ -115,3 +115,9 @@ function showSlides(n) {
   }
   slides[slideIndex].style.display = "block";
 }
+
+function toggleTheme() {
+  document.body.classList.toggle('theme-dark');
+  document.body.classList.toggle('theme-light');
+  document.body.classList.toggle('invert-text');
+}

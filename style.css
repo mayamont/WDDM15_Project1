@@ -327,3 +327,18 @@ a {
     display: inline-block;
     margin: 1.4em 1em 1em 1em;
 }
+
+.theme-dark {
+    color: #fff !important;
+    background-color: #8d1007 !important;
+}
+
+.theme-light {
+    color: #000 !important;
+    background-color: #4a4a46 !important;
+    
+}
+
+.invert-text {
+    color: #fff !important;
+}
