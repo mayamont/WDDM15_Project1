@@ -123,4 +123,7 @@ function toggleTheme() {
   document.body.classList.toggle('invert-text');
 }
 
-
+document.addEventListener('DOMContentLoaded', function () {
+  var fadeInElement = document.getElementById('fadeInElement');
+  fadeInElement.style.display = 'block';
+});
