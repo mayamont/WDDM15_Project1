@@ -166,9 +166,9 @@ $(window).on('load', function () {
 });
 
 // Animate Today's Qualification button
-function animateClientInfo() {
+function animateSummary() {
   // Animate to the larger size
-  $('#ClientInfo').animate({
+  $('#result').animate({
     fontSize: '1.5em', 
     opacity: 0.5,    
   }, 1000, function() {
