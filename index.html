@@ -51,7 +51,7 @@
           <div class="grid-container">
       <div class="item1 theme">
         <div class="center">
-          <h1 class="large animate-bottom">The Canada Pension Plan</h1>
+          <h1 class="large animated-element animate__animated animate__fadeIn" id="fadeInElement">The Canada Pension Plan</h1>
         </div>
       </div>
       <div class="item3">
@@ -93,7 +93,8 @@
           <button class="custom-button" id="benefits" onclick="Benefits()" onmousedown="handleMouseDown(this)" onmouseup="handleMouseUp(this)">
             Benefits
           </button>
-          <button class = "custom-button" id="age-check">Age Check!</button>
+
+          <button class = "custom-button animate__animated animate__bounce" id="age-check">Age Check!</button>
           <!-- Texts that will be changed according to the button clicked -->
         <div>
         <h1 id="texth1" class="important" id = "AboutIt">About the plan</h1>
@@ -168,6 +169,13 @@
           </div>
       </div>
   </div>
+  
+  <div class="loader-container">
+		<div class="loader">
+		  <div class="loader-bar"></div>
+		  <div class="loader-text">Loading...</div>
+		</div>
+	  </div>
 
     <footer class="site-footer">
       <div class="container">
@@ -192,6 +200,10 @@
           <div class="col-md-8 col-sm-6 col-xs-12">
             <p class="copyright-text">Copyright &copy; 2023 All Rights Reserved by
               <a href="#">Canada Pension Plan</a>.
+              <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>jQuery Text Animation</title>
+  <link rel="stylesheet" href="styles.css">
             </p>
           </div>
         </div>
@@ -204,6 +216,12 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <div id="animated-text">Thank you!! </div>
+
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="script.js"></script>
+
+
 </body>
 
 </html>

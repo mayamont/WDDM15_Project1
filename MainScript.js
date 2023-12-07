@@ -123,4 +123,42 @@ function toggleTheme() {
   document.body.classList.toggle('invert-text');
 }
 
+document.addEventListener('DOMContentLoaded', function () {
+  var fadeInElement = document.getElementById('fadeInElement');
+  fadeInElement.style.display = 'block';
+});
+$(document).ready(function() {
 
+  function animateText() {
+   
+    $('#animated-text').fadeOut(1000, function() {
+    
+      $(this).text('Thank you');
+      
+      $(this).fadeIn(1000);
+    });
+  }
+
+  
+  setInterval(animateText, 2000);
+});
+
+
+window.addEventListener('load', function () {
+  const loader = document.querySelector('.loader-bar');
+  const loaderContainer = document.querySelector('.loader-container');
+
+  let progress = 0;
+  const interval = setInterval(function () {
+    progress += Math.random() * 20; 
+    if (progress > 100) {
+      clearInterval(interval);
+      loader.style.width = '100%';
+      setTimeout(function () {
+        loaderContainer.classList.add('loaded');
+      }, 500);
+    } else {
+      loader.style.width = progress + '%';
+    }
+  }, 300);
+});
