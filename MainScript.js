@@ -144,21 +144,38 @@ $(document).ready(function() {
 });
 
 
-window.addEventListener('load', function () {
-  const loader = document.querySelector('.loader-bar');
-  const loaderContainer = document.querySelector('.loader-container');
+$(window).on('load', function () {
+  const $loader = $('.loader-bar');
+  const $loaderContainer = $('.loader-container');
 
   let progress = 0;
   const interval = setInterval(function () {
-    progress += Math.random() * 20; 
+    // Increase progress more rapidly
+    progress += Math.random() * 40;
+
     if (progress > 100) {
       clearInterval(interval);
-      loader.style.width = '100%';
+      $loader.css('width', '100%');
       setTimeout(function () {
-        loaderContainer.classList.add('loaded');
+        $loaderContainer.addClass('loaded');
       }, 500);
     } else {
-      loader.style.width = progress + '%';
+      $loader.css('width', progress + '%');
     }
-  }, 300);
+  }, 50); // Decrease the interval duration
 });
+
+// Animate Today's Qualification button
+function animateClientInfo() {
+  // Animate to the larger size
+  $('#ClientInfo').animate({
+    fontSize: '1.5em', 
+    opacity: 0.5,    
+  }, 1000, function() {
+    // Animate back to normal size
+    $(this).animate({
+      fontSize: '1em', 
+      opacity: 1,      
+    }, 1000);          
+  });
+}
