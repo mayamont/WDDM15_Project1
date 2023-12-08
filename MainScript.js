@@ -165,7 +165,7 @@ $(window).on('load', function () {
   }, 50); // Decrease the interval duration
 });
 
-// Animate Today's Qualification button
+// JQUERY Animate Today's Qualification button
 function animateSummary() {
   // Animate to the larger size
   $('#result').animate({
@@ -179,3 +179,42 @@ function animateSummary() {
     }, 1000);          
   });
 }
+
+function animateAbout() {
+  // Animate to the larger size
+  $('#About').animate({
+    fontSize: '1.5em', 
+    opacity: 0.5,    
+  }, 1000, function() {
+    // Animate back to normal size
+    $(this).animate({
+      fontSize: '1em', 
+      opacity: 1,      
+    }, 1000);          
+  });
+}
+
+function animateClientInfo() {
+  // Animate to the larger size
+  $('#ClientInfo').animate({
+    fontSize: '1.5em', 
+    opacity: 0.5,    
+  }, 1000, function() {
+    // Animate back to normal size
+    $(this).animate({
+      fontSize: '1em', 
+      opacity: 1,      
+    }, 1000);          
+  });
+}
+
+
+
+ // JQUERY slide down dropdown menu
+ $(document).ready(function () {
+  $('.dropdown').hover(function () {
+      $(this).find('.dropdown-menu').slideDown();
+  }, function () {
+      $(this).find('.dropdown-menu').slideUp();
+  });
+});

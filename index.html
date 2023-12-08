@@ -18,18 +18,18 @@
   <header class="site-header">
     <!-- bootstrap dropdown menu -->
     <div class="dropdown">
-      <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-        Menu
-      </a>
-    
-      <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="#">Account</a></li>
-        <li><a class="dropdown-item" href="#">Settings</a></li>
-        <li><a class="dropdown-item" href="#">Help</a></li>
-      </ul>
+        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Menu
+        </a>
+
+        <ul class="dropdown-menu" style="display: none;">
+            <li><a class="dropdown-item" href="#">Account</a></li>
+            <li><a class="dropdown-item" href="#">Settings</a></li>
+            <li><a class="dropdown-item" href="#">Help</a></li>
+        </ul>
     </div>
     <div class="container">
-    <div class="site-identity">
+        <div class="site-identity">
       
       <a href="#"><img src="./images/Pensionplan logo.png" alt="Site Name" /></a>
       <h1><a href="#">The Canada Pension Plan</a></h1>
@@ -80,10 +80,10 @@
     </div>
     
       <div class="item4">
-        <button class="custom-button" onclick="Aboutit()" onmousedown="handleMouseDown(this)">
+        <button class="custom-button" id="About" onclick="Aboutit(); animateAbout();">
           About the plan
         </button>
-        <button class="custom-button animate__animated animate__bounce" id="ClientInfo" onclick="ClientInfo()">
+        <button class="custom-button animate__animated animate__bounce" id="ClientInfo" onclick="ClientInfo(); animateClientInfo();">
           Today's qualification
         
         </button>
@@ -93,11 +93,11 @@
         <button class="custom-button animate__animated animate__bounce" id="result" onclick="Result(); animateSummary();">
             Summary
           </button>
-          <button class="custom-button" id="benefits" onclick="Benefits()" onmousedown="handleMouseDown(this)" onmouseup="handleMouseUp(this)">
+          <button class="custom-button" id="benefits" onclick="Benefits(); animateSummary();"">
             Benefits
           </button>
 
-          <button class = "custom-button animate__animated animate__bounce" id="age-check">Age Check!</button>
+          
                     <!-- Texts that will be changed according to the button clicked -->
         <div>
         <h1 id="texth1" class="important" id = "AboutIt">About the plan</h1>
