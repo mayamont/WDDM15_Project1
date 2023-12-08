@@ -218,3 +218,42 @@ function animateClientInfo() {
       $(this).find('.dropdown-menu').slideUp();
   });
 });
+
+$(document).ready(function () {
+  // Set the initial state of the news section
+  $('.news-section').css({
+      'opacity': 0,
+      'transform': 'translateY(50px)', // Initial position off-screen
+  });
+
+  // Function to check if an element is in the viewport
+  function isElementInViewport(element) {
+      var rect = element.getBoundingClientRect();
+      return (
+          rect.top >= 0 &&
+          rect.left >= 0 &&
+          rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+          rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+      );
+  }
+
+  // Function to handle the animation when an element is in the viewport
+  function handleScrollAnimation() {
+      $('.news-section').each(function () {
+          if (isElementInViewport(this)) {
+              $(this).animate({
+                  'opacity': 1,
+                  'transform': 'translateY(0)', // Move to the original position
+              }, 1000); // Animation duration in milliseconds
+          }
+      });
+  }
+
+  // Trigger the animation when the page is loaded
+  handleScrollAnimation();
+
+  // Trigger the animation when scrolling
+  $(window).scroll(function () {
+      handleScrollAnimation();
+  });
+});
