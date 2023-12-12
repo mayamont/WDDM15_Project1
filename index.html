@@ -111,18 +111,24 @@
                     
                     <p id="textpresult" class="lead" hidden="hidden">To qualify you have to be XX years old...</p>
                 <!-- Table/qualify !-->  
-                    <table id="infotable" hidden = "hidden" class = "table container striped bordered">
-                        <tr class ="theme">
-                            <th>We are in</th>
-                            <th>Who qualifies</th>
-                            <th>Minimum Age</th>
-                        </tr>
-                        <tr class="center">
-                            <td id = "yeartoday"></td>
-                            <td id = "yearqualified"></td>
-                            <td id = "age"></td>
-                        </tr>
-                      </table>
+                <div class="container">
+                  <table id="infotable" class="table table-striped table-bordered" hidden="hidden">
+                      <thead class="theme">
+                          <tr>
+                              <th>We are in</th>
+                              <th>Who qualifies</th>
+                              <th>Minimum Age</th>
+                          </tr>
+                      </thead>
+                      <tbody class="center">
+                          <tr>
+                              <td id="yeartoday"></td>
+                              <td id="yearqualified"></td>
+                              <td id="age"></td>
+                          </tr>
+                      </tbody>
+                  </table>
+                </div>
             </div>
             <div class="item5 container padding-16"><img src="./images/Government-of-Canada-Logo-1980.png" title="canada logo" width="100px" alt="canadian government logo"></div>
         </div>
