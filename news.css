@@ -95,7 +95,78 @@ form {
     opacity: 0.8;
   }
 
- 
+  .site-footer {
+    background-color: #f6665c;
+    padding: 45px 0 20px;
+    font-size: 15px;
+    line-height: 24px;
+    color: #000;
+  }
+
+  .site-footer hr {
+    border-top-color: #000;
+    opacity: 0.5;
+  }
+
+  .site-footer hr.small {
+    margin: 20px 0;
+  }
+
+  .site-footer h6 {
+    color: #000;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-top: 5px;
+    letter-spacing: 2px;
+  }
+
+  .site-footer a {
+    color: #000;
+  }
+
+  .site-footer a:hover {
+    color: #8d1007;
+    text-decoration: none;
+  }
+
+  .footer-links {
+    padding-left: 0;
+    list-style: none;
+  }
+
+  .footer-links li {
+    display: block;
+  }
+
+  .footer-links a {
+    color: #000;
+  }
+
+  .footer-links a:active,
+  .footer-links a:focus,
+  .footer-links a:hover {
+    color: #8d1007;
+    text-decoration: none;
+  }
+
+  .footer-links.inline li {
+    display: inline-block;
+  }
+
+  .site-footer .social-icons {
+    text-align: right;
+  }
+
+  .site-footer .social-icons a {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin-left: 6px;
+    margin-right: 0;
+    border-radius: 100%;
+    background-color: #000;
+  }
+
 
   
  
