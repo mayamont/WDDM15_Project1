@@ -80,58 +80,114 @@
             </div>
           </div>
     
-      <div class="item4">
-        <button class="custom-button" id="About" onclick="Aboutit(); animateAbout();">
-          About the plan
-        </button>
-        <button class="custom-button animate__animated animate__bounce" id="ClientInfo" onclick="ClientInfo(); animateClientInfo();">
-          Today's qualification
-        
-        </button>
-
-        <button class="custom-button animate__animated animate__bounce" id="age-check" onclick="animateAgeCheck()">Age Check!</button>
-
-        <button class="custom-button animate__animated animate__bounce" id="result" onclick="Result(); animateSummary();">
-            Summary
-          </button>
-          <button class="custom-button" id="benefits" onclick="Benefits(); animateSummary();"">
-            Benefits
-          </button>
-
+          <div class="col-12 col-md-7 item4">
+            <button class="custom-button" id="About" onclick="Aboutit(); animateAbout();">
+              About the plan
+            </button>
+            <button class="custom-button animate__animated animate__bounce" id="ClientInfo" onclick="ClientInfo(); animateClientInfo();">
+              Today's qualification
+            
+            </button>
+    
+            <button class="custom-button animate__animated animate__bounce" id="age-check" onclick="animateAgeCheck()">Age Check!</button>
+    
+            <button class="custom-button animate__animated animate__bounce" id="result" onclick="Result(); animateSummary();">
+                Summary
+              </button>
+              <button class="custom-button" id="benefits" onclick="Benefits(); animateSummary();"">
+                Benefits
+              </button>
+    
+              
+                        <!-- Texts that will be changed according to the button clicked -->
+            <div>
+              <h1 id="texth1" class="h1 important" id="AboutIt">About the plan</h1>
+              <p id="textpplan" class="lead text">The Canada Pension Plan (CPP) retirement pension is a monthly, taxable benefit that replaces part of your income when you retire. If you qualify, you’ll receive the CPP retirement pension for the rest of your life.<br> To qualify you must:</p>
+              <ul class="list" id="requirements">
+                  <li>be at least 60 years old</li>
+                  <li>have made at least one valid contribution to the CPP</li>
+              </ul>
+              <p id="textp2plan" class="lead text">Valid contributions can be either from work you did in Canada or as the result of receiving credits from a former spouse or former common-law partner at the end of the relationship.</p>
+              <p id="textp3plan" class="text-muted legend">Text from: <a href="https://www.canada.ca/en/services/benefits/publicpensions/cpp.html">Canadian government website</a></p>
+          </div>
           
-                    <!-- Texts that will be changed according to the button clicked -->
-                      <div>
-                        <h1 id="texth1" class="h1 important" id="AboutIt">About the plan</h1>
-                        <p id="textpplan" class="lead text">The Canada Pension Plan (CPP) retirement pension is a monthly, taxable benefit that replaces part of your income when you retire. If you qualify, you’ll receive the CPP retirement pension for the rest of your life.<br> To qualify you must:</p>
-                        <ul class="list" id="requirements">
-                            <li>be at least 60 years old</li>
-                            <li>have made at least one valid contribution to the CPP</li>
-                        </ul>
-                        <p id="textp2plan" class="lead text">Valid contributions can be either from work you did in Canada or as the result of receiving credits from a former spouse or former common-law partner at the end of the relationship.</p>
-                        <p id="textp3plan" class="text-muted legend">Text from: <a href="https://www.canada.ca/en/services/benefits/publicpensions/cpp.html">Canadian government website</a></p>
+          <p id="textpresult" class="lead" hidden="hidden">To qualify you have to be XX years old...</p>
+                    <!-- Table/qualify !-->  
+                    <div class="container">
+                      <table id="infotable" class="table table-striped table-bordered" hidden="hidden">
+                          <thead class="theme">
+                              <tr>
+                                  <th>We are in</th>
+                                  <th>Who qualifies</th>
+                                  <th>Minimum Age</th>
+                              </tr>
+                          </thead>
+                          <tbody class="center">
+                              <tr>
+                                  <td id="yeartoday"></td>
+                                  <td id="yearqualified"></td>
+                                  <td id="age"></td>
+                              </tr>
+                          </tbody>
+                      </table>
+                  </div>
+                </div>
+          </div>
+      
+    
+      </div>
+      <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-8">
+                <!-- News Section with added class -->
+                <h2 class="mb-4">Latest News</h2>
+    
+                <div class="card mb-4 news-section">
+                    <img src="news-image-1.jpg" class="card-img-top" alt="News Image 1">
+                    <div class="card-body">
+                        <h5 class="card-title">News Title 1</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio a lectus sagittis, vel dapibus
+                            sapien euismod.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
                     </div>
-                    
-                    <p id="textpresult" class="lead" hidden="hidden">To qualify you have to be XX years old...</p>
-                <!-- Table/qualify !-->  
-                <div class="container">
-                  <table id="infotable" class="table table-striped table-bordered" hidden="hidden">
-                      <thead class="theme">
-                          <tr>
-                              <th>We are in</th>
-                              <th>Who qualifies</th>
-                              <th>Minimum Age</th>
-                          </tr>
-                      </thead>
-                      <tbody class="center">
-                          <tr>
-                              <td id="yeartoday"></td>
-                              <td id="yearqualified"></td>
-                              <td id="age"></td>
-                          </tr>
-                      </tbody>
-                  </table>
+                </div>
+    
+                <div class="card mb-4 news-section">
+                    <img src="news-image-2.jpg" class="card-img-top" alt="News Image 2">
+                    <div class="card-body">
+                        <h5 class="card-title">News Title 2</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio a lectus sagittis, vel dapibus
+                            sapien euismod.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+    
+                <!-- news cards -->
+    
+            </div>
+    
+            <!-- Sidebar -->
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Popular News</h5>
+                        <ul class="list-group">
+                            <li class="list-group-item">News Title 1</li>
+                            <li class="list-group-item">News Title 2</li>
+                            <!-- popular news items -->
+                        </ul>
+                    </div>
                 </div>
             </div>
+        </div>
+    </div>
+    
+    <div class="loader-container">
+      <div class="loader">
+        <div class="loader-bar"></div>
+        <div class="loader-text">Loading...</div>
+      </div>
+    </div>
             <div class="item5 container padding-16">
               <img src="./images/Government-of-Canada-Logo-1980.png" title="canada logo" width="100px" alt="canadian government logo">
               <footer class="site-footer">
@@ -166,52 +222,7 @@
             </div>
         </div>
     </div>
-    <div class="container mt-5">
-      <div class="row">
-          <div class="col-md-8">
-              <!-- News Section with added class -->
-              <h2 class="mb-4">Latest News</h2>
-
-              <div class="card mb-4 news-section">
-                  <img src="news-image-1.jpg" class="card-img-top" alt="News Image 1">
-                  <div class="card-body">
-                      <h5 class="card-title">News Title 1</h5>
-                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio a lectus sagittis, vel dapibus
-                          sapien euismod.</p>
-                      <a href="#" class="btn btn-primary">Read More</a>
-                  </div>
-              </div>
-
-              <div class="card mb-4 news-section">
-                  <img src="news-image-2.jpg" class="card-img-top" alt="News Image 2">
-                  <div class="card-body">
-                      <h5 class="card-title">News Title 2</h5>
-                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio a lectus sagittis, vel dapibus
-                          sapien euismod.</p>
-                      <a href="#" class="btn btn-primary">Read More</a>
-                  </div>
-              </div>
-
-              <!-- news cards -->
-
-          </div>
-
-          <!-- Sidebar -->
-          <div class="col-md-4">
-              <div class="card">
-                  <div class="card-body">
-                      <h5 class="card-title">Popular News</h5>
-                      <ul class="list-group">
-                          <li class="list-group-item">News Title 1</li>
-                          <li class="list-group-item">News Title 2</li>
-                          <!-- popular news items -->
-                      </ul>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </div>
-  
+   
   <div class="loader-container">
 		<div class="loader">
 		  <div class="loader-bar"></div>
