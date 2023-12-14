@@ -53,6 +53,17 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Epilogue", sans-serif;}
   color: #8d1007 !important;
 }
 
+.btn-primary {
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+
 .grid-container {
   gap: 10px;
   padding: 10px;
