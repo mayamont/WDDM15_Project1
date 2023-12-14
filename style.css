@@ -37,6 +37,14 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Epilogue", sans-serif;}
   border-top-left-radius: calc(0.25rem - 1px);
   border-top-right-radius: calc(0.25rem - 1px);
 }
+.card-title {
+  font-size: 1.25rem !important;
+}
+
+.card-text {
+  font-size: 1rem !important;
+}
+
 .grid-container {
   gap: 10px;
   padding: 10px;
