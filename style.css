@@ -13,6 +13,9 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Epilogue", sans-serif;}
 .text-white {
   color: #fff !important;
 }
+.text-dark {
+  color: #000 !important;
+}
 
 .grid-container {
   gap: 10px;
