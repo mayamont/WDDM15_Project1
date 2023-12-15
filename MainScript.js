@@ -102,10 +102,12 @@ function toggleTheme() {
   $('body').toggleClass('theme-dark theme-light invert-text');
 }
 
-document.addEventListener('DOMContentLoaded', function () {
-  var fadeInElement = document.getElementById('fadeInElement');
-  fadeInElement.style.display = 'block';
+// fadeInElement JQuery
+$(document).ready(function () {
+  var fadeInElement = $('#fadeInElement');
+  fadeInElement.css('display', 'block');
 });
+
 $(document).ready(function() {
 
   function animateText() {
