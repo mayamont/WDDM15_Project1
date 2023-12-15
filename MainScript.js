@@ -249,7 +249,7 @@ const myElement = $("#texth1");
 const myElement2 = $("textpplan");
 let myElement3 = document.getElementById("requirements");
 let hidden = myElement3.getAttribute("hidden");
-const myElement4 = document.getElementById("textp2plan");
+const myElement4 = $("textp2plan");
 const myElement5 = document.getElementById("textp3plan");
 
 const myElement6 = document.getElementById("texth1");
