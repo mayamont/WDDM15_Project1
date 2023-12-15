@@ -77,9 +77,10 @@ $(document).ready(function() {
   });
 });
 
-document.getElementById("benefits").addEventListener("click", function() {
-    alert("STOP, CONSTRUCTION!!!! 🚧🛑🚜🛠️👷");
-  });
+// Benefits button function JQuery
+$("#benefits").on("click", function() {
+  alert("STOP, CONSTRUCTION!!!! 🚧🛑🚜🛠️👷");
+});
 
 $.getJSON( "information.json", function( data ) {
     PeopleQualified = data.YearQualified + " or older";
