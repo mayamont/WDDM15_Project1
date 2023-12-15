@@ -190,7 +190,6 @@ function animateClientInfo() {
 }
 
 
-
  // JQUERY slide down dropdown menu
  $(document).ready(function () {
   $('.dropdown').hover(function () {
@@ -265,4 +264,5 @@ const myElement12 = document.getElementById("textpplan");
 const myElement13 = document.getElementById("textp2plan");
 const myElement14 = document.getElementById("textp3plan");
 const myElement15 = document.getElementById("textpresult");
-let hidden3 = myElement15.getAttribute("hidden");
+
+let hidden3 = $("#textpresult").attr("hidden"); 
