@@ -250,7 +250,7 @@ const myElement2 = $("textpplan");
 let myElement3 = document.getElementById("requirements");
 let hidden = myElement3.getAttribute("hidden");
 const myElement4 = $("textp2plan");
-const myElement5 = document.getElementById("textp3plan");
+const myElement5 = $("textp3plan");
 
 const myElement6 = document.getElementById("texth1");
 const myElement7 = document.getElementById("textpplan");
