@@ -1,7 +1,8 @@
 const YearsQualified = document.getElementById("yearqualified");
 const YearToday = document.getElementById("yeartoday");
-const age = document.getElementById("age");
-
+$(document).ready(function() {
+  const age = $("#age");
+});
 const myElement = document.getElementById("texth1");
 const myElement2 = document.getElementById("textpplan");
 let myElement3 = document.getElementById("requirements");
