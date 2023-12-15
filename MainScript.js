@@ -120,11 +120,9 @@ function showSlides(n) {
   slides[slideIndex].style.display = "block";
 }
 
-
+// Toggle theme JQuery
 function toggleTheme() {
-  document.body.classList.toggle('theme-dark');
-  document.body.classList.toggle('theme-light');
-  document.body.classList.toggle('invert-text');
+  $('body').toggleClass('theme-dark theme-light invert-text');
 }
 
 document.addEventListener('DOMContentLoaded', function () {
