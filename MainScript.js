@@ -59,19 +59,21 @@ function ClientInfo(b){
     myElement15.setAttribute("hidden", "hidden");
 
 }
+// age check function JQuery
+$(document).ready(function() {
+  $("#age-check").on("click", function() {
+    const ageCheck = prompt("Type your age");
 
-document.getElementById("age-check").addEventListener("click", function() {
-  const ageCheck = prompt("Type your age");
-
-  if (ageCheck === "65") {
-    alert("You're at the standard age to retire!");
-  } else if (ageCheck > "65") {
-    alert("You've passed the standard age to retire!");
-  } else if (ageCheck >= "60") {
-    alert("You may be eligible to retire, although the standard age to retire is 65.");
-  } else if (ageCheck < "60") {
-    alert("You're too young!");
-  }
+    if (ageCheck === "65") {
+      alert("You're at the standard age to retire!");
+    } else if (ageCheck > "65") {
+      alert("You've passed the standard age to retire!");
+    } else if (ageCheck >= "60") {
+      alert("You may be eligible to retire, although the standard age to retire is 65.");
+    } else if (ageCheck < "60") {
+      alert("You're too young!");
+    }
+  });
 });
 
 document.getElementById("benefits").addEventListener("click", function() {
