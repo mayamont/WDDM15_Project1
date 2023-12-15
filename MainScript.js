@@ -246,7 +246,7 @@ $(document).ready(function() {
   const age = $("#age");
 });
 const myElement = $("#texth1");
-const myElement2 = document.getElementById("textpplan");
+const myElement2 = $("textpplan");
 let myElement3 = document.getElementById("requirements");
 let hidden = myElement3.getAttribute("hidden");
 const myElement4 = document.getElementById("textp2plan");
