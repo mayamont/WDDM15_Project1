@@ -29,16 +29,17 @@ function Result(a) {
   $('#textpresult').removeAttr("hidden");
 }
 
-function ClientInfo(b){
-    myElement6.innerHTML = "Today's qualification";
-    myElement7.innerHTML = "";
-    myElement8.innerHTML = "";
-    myElement9.innerHTML = "";
-    myElement10.removeAttribute("hidden");
-    myElement3.setAttribute("hidden", "hidden");
-    myElement15.setAttribute("hidden", "hidden");
-
+// client info updated to Jquery
+function ClientInfo(b) {
+  $('#texth1').html("Today's qualification");
+  $('#textpplan').html("");
+  $('#textp2plan').html("");
+  $('#textp3plan').html("");
+  $('#infotable').removeAttr("hidden");
+  $('#requirements').attr("hidden", "hidden");
+  $('#textpresult').attr("hidden", "hidden");
 }
+
 // age check function JQuery
 $(document).ready(function() {
   $("#age-check").on("click", function() {
