@@ -245,7 +245,7 @@ const YearToday = document.getElementById("yeartoday");
 $(document).ready(function() {
   const age = $("#age");
 });
-const myElement = document.getElementById("texth1");
+const myElement = $("#texth1");
 const myElement2 = document.getElementById("textpplan");
 let myElement3 = document.getElementById("requirements");
 let hidden = myElement3.getAttribute("hidden");
