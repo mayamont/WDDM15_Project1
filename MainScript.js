@@ -1,5 +1,3 @@
-
-
 function Aboutit(a) {
   var texto =
     "The Canada Pension Plan (CPP) retirement pension is a monthly, taxable benefit that replaces part of your income when you retire. If you qualify, you’ll receive the CPP retirement pension for the rest of your life.<br> To qualify you must:";
@@ -8,7 +6,7 @@ function Aboutit(a) {
   var texto3 =
     "Text from: <a href='https://www.canada.ca/en/services/benefits/publicpensions/cpp.html'>Canadian government website</a>";
 
-  // Using jQuery methods function about it
+  // Using jQuery function about it
   $('#texth1').html("About the plan");
   $('#requirements').removeAttr("hidden");
   $('#textpplan').removeAttr("hidden").html(texto);
@@ -71,6 +69,8 @@ $.getJSON( "information.json", function( data ) {
     myElement15.innerHTML = postiveOutcome;
 
 });
+
+// carousel jquery selector
 let slideIndex = 0;
 showSlides(slideIndex);
 
@@ -80,11 +80,10 @@ function plusSlides(n) {
 }
 
 function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
+  let slides = $(".mySlides");
 
   if (!slides || slides.length === 0) {
-    console.error("Nenhum slide encontrado.");
+    console.error("No slides found.");
     return;
   }
 
@@ -94,10 +93,8 @@ function showSlides(n) {
     slideIndex = slides.length - 1;
   }
 
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  slides[slideIndex].style.display = "block";
+  slides.css("display", "none");
+  slides.eq(slideIndex).css("display", "block");
 }
 
 // Toggle theme JQuery
